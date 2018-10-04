@@ -1,0 +1,78 @@
+<! DOCTYPE html>
+
+<html>
+    <head>
+        <title>Date - Javascript</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+
+        <div class="container">
+            <article>
+                <section>
+                    <h3>Czym różni się let od var?</h3>
+                    <h5>Z gróbsza różnice jakie znam są 3, pierwsza to zasięg.</h5>
+                    <p>
+                        <span >var</span> posiada zasięg funkcyjny, a <span>let</span> blokowy.
+                            Oznacza to tyle że mając jakiegąś pętlę, zmienną <span>let</span> będziemy mogli operować tylko i wyłączne w jego zakresie, natomiast <span>var</span> bedziemy mogli użyć poza petlą. 
+                    </p>
+                    <h4>Hoisting</h4>
+                    <p>
+                        Oznacza to tyle że zmienną <span>var</span> możemy wywołać zanim ją zadeklarujemy, i nie wywali nam się kod, co jest niemożliwe w przypadku <span>let</span>
+                    </p>
+                    <h4>Redeklarowanie</h4>
+                    <p>
+                        Zmienną <span>var</span> możemy zadeklarować po deklaracji, a <span>let</span> nie.
+                    </p>
+                </section>
+
+                <section>
+                        <h3>Czy można tworzyć własne eventy w Javascript (eventy takie jak load, scroll etc)?
+                                Jeżeli tak to podaj przykład.</h3>
+                        <p>
+                            <span >Tak</span> - np "click". Używając addEventListener() możemy "przypiąć" jakąś funkcję (w zasadzie ile ich chcemy) do zdarzenia click
+                        </p>
+                    </section>
+                <section>
+                    <h3>Czym jest Webpack i czym się różni od NPM?</h3>
+                    <h4>Webpack</h4>
+                    <p>
+                        <span>Webpack</span> jest to bandler narzedziem które, czyta wskazany wybrany przez nas plik js, i następnie wykonuje na nim przydzielone czynności. Webpack dzieli kod na na bundles - paczki które wczytuje w przeglądarce. 
+                    </p>
+                    <h4>NPM?</h4>
+                    <p>
+                            <span>NPM</span> jest to menager pakietów/ bibliotek dla środowiska <span>Node.js</span>. Dzięki niemu możemy w prosty sposób zainstalować jakąś paczkę do naszego projektu, i  z niej skożystać. 
+                    </p>
+                </section>
+                <section>
+                    <h3>Czym różni się atrybut async od defer w znaczniku &lt;script&gt;?</h3>
+                    <h4>async</h4>
+                    <p>
+                        Atrybut <span>async</span> sprawia że pobieranie skryptu js odbywa się równolegle podczas parsowania kodu HTML. W przypadku gdy skrypt zostanie pobrany nastąpi zatrzymanie się parsowania HTML, i wykona się nasz skrypt. Po czym parsowanie HTML zostanie wznowione. 
+                    </p>
+                    <h4>Defer</h4>
+                    <p>
+                        Atrybut <span>defer</span> sprawia że pobieranie skryptu js odbywa się równolegle podczas parsowania kodu HTML natomiast skrypt wykona się po całkowitym parsowaniu HTML.
+                    </p>
+                </section>
+                <p>Lorem ipsum dolor sit amet quam. Pellentesque varius lorem. Donec nonummy turpis. Curabitur urna turpis at sapien libero, fringilla condimentum, pulvinar felis, nec tellus. Aenean vel blandit iaculis, diam neque nibh sagittis malesuada. In tristique senectus et ultrices posuere cubilia Curae, Vestibulum nibh. Fusce convallis turpis. Duis non enim sed leo. Quisque vestibulum. Pellentesque pede in vehicula viverra. Proin gravida hendrerit wisi. Phasellus sapien aliquet id, ante. Vivamus ut felis ut vehicula ut, eros. Aliquam nec ipsum. Duis non enim sodales arcu, rutrum ac, fringilla ante ipsum primis in massa. Sed scelerisque id, felis. Phasellus tempor risus. Vivamus dignissim in, pulvinar semper nec, lacinia arcu nec eros. Nullam viverra enim sodales in, convallis non, quam. Ut ac augue leo, pretium cursus. In hac habitasse platea dictumst. Duis vel nibh. Aliquam erat eget sem. Nulla aliquet porttitor eros, id magna. Vestibulum consectetuer adipiscing gravida sem. Suspendisse elit. Nam cursus, nibh malesuada fames ac nunc. Nulla gravida hendrerit eget, blandit a, adipiscing at, bibendum tellus, volutpat eu, egestas at, rhoncus dolor sit amet nisl. Vestibulum eget elit sed dolor sit amet interdum.</p>
+                <p>Lorem ipsum dolor sit amet mauris. Etiam at mauris nulla, accumsan rutrum, urna magna neque, congue eu, aliquet molestie. Phasellus at tortor. Ut sodales, augue mi, nec pede. Aliquam rhoncus eu, semper sollicitudin. Nulla massa. Nulla malesuada. Nullam justo consequat eu, cursus a, fermentum pellentesque a, diam. Aliquam nonummy, tellus pharetra accumsan et, accumsan augue purus, vehicula dignissim. Donec a purus fringilla sit amet, est. Integer adipiscing. Duis non orci. Nunc arcu sed nunc. Phasellus hendrerit nonummy. Class aptent taciti sociosqu ad litora torquent per inceptos hymenaeos. Curabitur fringilla metus, vulputate quam. Pellentesque commodo ligula eget metus. Curabitur nec tellus. Fusce gravida, nisl ut lacus pede, a quam congue eu, fringilla odio. Aenean feugiat dolor. Mauris nec urna ut justo ipsum sit amet mauris. Aliquam gravida at, ornare euismod. Sed eget commodo id, felis. Mauris luctus et imperdiet sapien. Proin id nulla in faucibus eu, facilisis metus. Phasellus posuere cubilia Curae, Sed pharetra. Donec fermentum eu, pulvinar eget, aliquam eget, vestibulum id, sapien. Etiam ac enim sed.</p>
+                <p>Lorem ipsum dolor sit amet mauris. Etiam at mauris nulla, accumsan rutrum, urna magna neque, congue eu, aliquet molestie. Phasellus at tortor. Ut sodales, augue mi, nec pede. Aliquam rhoncus eu, semper sollicitudin. Nulla massa. Nulla malesuada. Nullam justo consequat eu, cursus a, fermentum pellentesque a, diam. Aliquam nonummy, tellus pharetra accumsan et, accumsan augue purus, vehicula dignissim. Donec a purus fringilla sit amet, est. Integer adipiscing. Duis non orci. Nunc arcu sed nunc. Phasellus hendrerit nonummy. Class aptent taciti sociosqu ad litora torquent per inceptos hymenaeos. Curabitur fringilla metus, vulputate quam. Pellentesque commodo ligula eget metus. Curabitur nec tellus. Fusce gravida, nisl ut lacus pede, a quam congue eu, fringilla odio. Aenean feugiat dolor. Mauris nec urna ut justo ipsum sit amet mauris. Aliquam gravida at, ornare euismod. Sed eget commodo id, felis. Mauris luctus et imperdiet sapien. Proin id nulla in faucibus eu, facilisis metus. Phasellus posuere cubilia Curae, Sed pharetra. Donec fermentum eu, pulvinar eget, aliquam eget, vestibulum id, sapien. Etiam ac enim sed.</p>
+                <p>Lorem ipsum dolor sit amet mauris. Etiam at mauris nulla, accumsan rutrum, urna magna neque, congue eu, aliquet molestie. Phasellus at tortor. Ut sodales, augue mi, nec pede. Aliquam rhoncus eu, semper sollicitudin. Nulla massa. Nulla malesuada. Nullam justo consequat eu, cursus a, fermentum pellentesque a, diam. Aliquam nonummy, tellus pharetra accumsan et, accumsan augue purus, vehicula dignissim. Donec a purus fringilla sit amet, est. Integer adipiscing. Duis non orci. Nunc arcu sed nunc. Phasellus hendrerit nonummy. Class aptent taciti sociosqu ad litora torquent per inceptos hymenaeos. Curabitur fringilla metus, vulputate quam. Pellentesque commodo ligula eget metus. Curabitur nec tellus. Fusce gravida, nisl ut lacus pede, a quam congue eu, fringilla odio. Aenean feugiat dolor. Mauris nec urna ut justo ipsum sit amet mauris. Aliquam gravida at, ornare euismod. Sed eget commodo id, felis. Mauris luctus et imperdiet sapien. Proin id nulla in faucibus eu, facilisis metus. Phasellus posuere cubilia Curae, Sed pharetra. Donec fermentum eu, pulvinar eget, aliquam eget, vestibulum id, sapien. Etiam ac enim sed.</p>
+                <p>Lorem ipsum dolor sit amet mauris. Etiam at mauris nulla, accumsan rutrum, urna magna neque, congue eu, aliquet molestie. Phasellus at tortor. Ut sodales, augue mi, nec pede. Aliquam rhoncus eu, semper sollicitudin. Nulla massa. Nulla malesuada. Nullam justo consequat eu, cursus a, fermentum pellentesque a, diam. Aliquam nonummy, tellus pharetra accumsan et, accumsan augue purus, vehicula dignissim. Donec a purus fringilla sit amet, est. Integer adipiscing. Duis non orci. Nunc arcu sed nunc. Phasellus hendrerit nonummy. Class aptent taciti sociosqu ad litora torquent per inceptos hymenaeos. Curabitur fringilla metus, vulputate quam. Pellentesque commodo ligula eget metus. Curabitur nec tellus. Fusce gravida, nisl ut lacus pede, a quam congue eu, fringilla odio. Aenean feugiat dolor. Mauris nec urna ut justo ipsum sit amet mauris. Aliquam gravida at, ornare euismod. Sed eget commodo id, felis. Mauris luctus et imperdiet sapien. Proin id nulla in faucibus eu, facilisis metus. Phasellus posuere cubilia Curae, Sed pharetra. Donec fermentum eu, pulvinar eget, aliquam eget, vestibulum id, sapien. Etiam ac enim sed.</p>
+            </article>
+            <div id="GDPR-alert" class="alert" hidden>
+                <h2>GDPR consent</h2>
+                <p>Ten box w sumie nie jest responsywny, nie chciałem się z tym bawić gdyż nie to jest moim celem.
+                Lorem ipsum dolor sit amet quam. Pellentesque varius lorem. Donec nonummy turpis. Curabitur urna turpis at sapien libero, fringilla condimentum, pulvinar felis, nec tellus. Aenean vel blandit iaculis, diam neque nibh sagittis malesuada. In tristique senectus et ultrices posuere cubilia Curae, Vestibulum nibh. </p>
+                <div class="button-group">
+                    <input class="btn save-date" type="button" value="Akcept">
+                    <input class="btn save-date" type="button" value="Cancel">
+                <div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
